@@ -41,3 +41,5 @@
             -Không lưu trong database
 *Với thuật toán bất đối xứng khi hacker xâm nhập vào hệ thống thì chỉ lấy được public key không lấy được private key
 ```
+### AccessToken và RefreshToken:
+### token bị hacker chiếm:
