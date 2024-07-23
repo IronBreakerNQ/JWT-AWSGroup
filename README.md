@@ -1,9 +1,29 @@
-#JWT-AWSGroup
+# JWT-AWSGroup
 Ý tưởng: Tạo ra 1 hệ thông phân quyên người dùng và xác thực với thuật toán bất đối xứng JWT
 Mind map 
 ![Screenshot (1857)](https://github.com/user-attachments/assets/9ea97da6-17a2-485b-951c-d703633e075f)
-Hệ thống phần quyền người dùng
+## Hệ thống phần quyền người dùng
+```plaintext
+  Group:
+    Field:task,user
+    Menthod: 
+      -User:create a store task , create a store include user.
+    Tạo ra 1 nhóm để chứ dữ liệu.
+  User:
+    Field: task.
+    Menthod: CUR task.
+    Là cấp thấp nhất trong mô hình phân quyền người dùng nên chỉ thục hiện các chức năng CUR , không có delete !
+  Admin:
+    Field: user,admin,group.
+    Menthod:
+      -User:  CRUD, add role and remove role.
+      -Admin: Update,delete.
+      -Group: CRUD group, add user include group,Select services for group.
+      Là cấp cao nhất trong mô hình phân quyền tương tác hầu hết vớ user và group !
   Root: 
-    Menthod: create admin , delete admin.
-    Roles:
-    
+    Field: admin..
+    Menthod: 
+     -Admin:create admin. 
+    Có chức năng tạo ra các tài khoản admin mới , lấy lại các tài khoản admin khi bị mất.
+    *Sau khi tạo xong các admin cần thiết nên xóa hết cache liên quan và không đụng tới **root** nữa !
+```
