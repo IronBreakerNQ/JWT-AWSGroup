@@ -1,8 +1,8 @@
 # JWT-AWSGroup
 Ý tưởng: Tạo ra 1 hệ thông phân quyên người dùng và xác thực với thuật toán bất đối xứng JWT
-Mind map 
-![Screenshot (1857)](https://github.com/user-attachments/assets/9ea97da6-17a2-485b-951c-d703633e075f)
 ## Hệ thống phần quyền người dùng
+### Mind map 
+![Screenshot (1857)](https://github.com/user-attachments/assets/9ea97da6-17a2-485b-951c-d703633e075f)
 ```plaintext
   Group:
     Field:task,user
@@ -26,4 +26,18 @@ Mind map
      -Admin:create admin. 
     Có chức năng tạo ra các tài khoản admin mới , lấy lại các tài khoản admin khi bị mất.
     *Sau khi tạo xong các admin cần thiết nên xóa hết cache liên quan và không đụng tới **root** nữa !
+```
+## Thuật toán bất đối xứng JWT
+### Mind map:
+  ![Screenshot (1858)](https://github.com/user-attachments/assets/3efa8a7f-c895-47e8-84d0-64dcc696b640)
+```plaintext
+  Public key:
+            -Là key được tạo ra có chức năng verify token
+            -Được lưu trong database
+            -Không sợ bị mất
+  Private Key:
+            -Là key được tạo ra có chức năng create token
+            -Được cung cấp cho người dùng
+            -Không lưu trong database
+*Với thuật toán bất đối xứng khi hacker xâm nhập vào hệ thống thì chỉ lấy được public key không lấy được private key
 ```
