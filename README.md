@@ -55,11 +55,19 @@
 ### AccessToken và RefreshToken (Future features)
 ## Code 
 ### model
+```plaintext
   rootSchema:
       Field:gmail,name,passWorld,publicKey,Admin[],timestamps.
   AdminSchema:
       Field:gmail,name,passWorld,user[],Group[],publicKey,timestamps.
   childSchema:
       Field:gamil,name,passWorld,role a->b,timestamps.
+  GroupSchema:
+      Field:admin,user[],methoda a->b,timestamps.
   Task a->d:
       Field:methoda,user[],timestamps.
+  BlackListSchema:
+      Field:token,timestamps.
+  BannedListSchema:
+      Field:token,timestamps.
+  ```
