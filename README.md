@@ -41,5 +41,8 @@
             -Không lưu trong database
 *Với thuật toán bất đối xứng khi hacker xâm nhập vào hệ thống thì chỉ lấy được public key không lấy được private key
 ```
+### Token bị hacker lấy được:
+  ![Uploading Screenshot (1867).png…]()
+
 ### AccessToken và RefreshToken:
-### token bị hacker chiếm:
+
