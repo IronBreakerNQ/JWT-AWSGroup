@@ -42,7 +42,6 @@
 *Với thuật toán bất đối xứng khi hacker xâm nhập vào hệ thống thì chỉ lấy được public key không lấy được private key
 ```
 ### Token bị hacker lấy được:
-  ![Uploading Screenshot (1867).png…]()
-
+  ![Screenshot (1867)](https://github.com/user-attachments/assets/fdae3a59-a7c0-4506-841c-2e7526419930)
 ### AccessToken và RefreshToken:
 
