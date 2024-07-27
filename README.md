@@ -43,5 +43,12 @@
 ```
 ### Token bị hacker lấy được:
   ![Screenshot (1867)](https://github.com/user-attachments/assets/fdae3a59-a7c0-4506-841c-2e7526419930)
+  ```plaintext
+  -User A gửi token A lên server và được cấp tokenAA đồng thời lưu token A vào blacklist
+  -Hacker cũng gửi token A lên server , kiểm tra được A đã tồn tại trong blacklist , dẫn đến banned token AA
+  -Token A và token AA đều bị cấm , user và hacker phải đang nhập lại
+  => Ai có mật khẩu thì người đó lấy được user
+  Ý tưởng: khi hacker lấy được token 1 thời gian thì token hết hạn , server sẽ thu hồi các token củ lại , nếu có 2 token trùng nhau thì sẽ banned hết tất cả token của user đó
+  ```
 ### AccessToken và RefreshToken:
 
