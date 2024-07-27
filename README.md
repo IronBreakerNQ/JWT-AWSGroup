@@ -1,12 +1,3 @@
-# Overview
-## JWT-AWSGroup 
-## Hệ thống phần quyền người dùng
-## JWT
-  ### Thuật toán bất đối xứng JWT
-  ### Token bị hacker lấy được 
-  ### Future features
-  #### AccessToken và RefreshToken
-
 # JWT-AWSGroup
 Ý tưởng: Tạo ra 1 hệ thống phân quyên người dùng và xác thực với thuật toán bất đối xứng JWT
 ## Hệ thống phần quyền người dùng
