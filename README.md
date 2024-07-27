@@ -52,7 +52,6 @@
   Ý tưởng: khi hacker lấy được token 1 thời gian thì token hết hạn , server sẽ thu hồi các token củ lại , nếu có
   2 token trùng nhau thì sẽ banned hết tất cả token của user đó
   ```
-### AccessToken và RefreshToken (Future features)
 ## Code:
 ### Model
 ```plaintext
@@ -103,5 +102,7 @@
       [POST] root/create
       [POST] root/login
       [GET] root/test
-  ```
-  
+    ```
+  ## Future features:
+  ### AccessToken và RefreshToken
+  ### User identifier
