@@ -75,7 +75,6 @@
 ```plaintext
   rootController:
       Menthod:Create,Login,test(CURD)... .
-      Login:
   AdminController:
        Menthod:Create,Login,test(CURD)... .
   ChildController:
@@ -87,15 +86,22 @@
   ```
   ### Middleware
   ```plaintext
-  rootController:
-      Menthod:Create,Login,test(CURD)... .
-  AdminController:
-       Menthod:Create,Login,test(CURD)... .
-  ChildController:
-       Menthod:Create,Login,test(CURD)... .
-  GroupController:
-      Menthod:Create,Login,test(CURD)... .
-  TaskController:
-      Menthod:Create,Login,test(CURD)... .
+     AuthenticateToken(admin,root,child).
+     AuthenticateToken(blackList,BannedList).
+  ```
+  ## router
+    ```plaintext
+     root:
+      [POST] root/create
+      [POST] root/login
+      [GET] root/test
+     admin
+      [POST] root/create
+      [POST] root/login
+      [GET] root/test
+     child
+      [POST] root/create
+      [POST] root/login
+      [GET] root/test
   ```
   
