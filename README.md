@@ -87,6 +87,8 @@
   ```plaintext
      AuthenticateToken(admin,root,child).
      AuthenticateToken(blackList,BannedList).
+     HassPassWorld
+     Decode
   ```
   ## router
     ```plaintext
@@ -106,3 +108,14 @@
   ## Future features:
   ### AccessToken và RefreshToken
   ### User identifier
+  ## library
+  ```plaintext
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4",
+    "crypto": "^1.0.1",
+    "morgan": "^1.10.0",
+  ```
