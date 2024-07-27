@@ -1,0 +1,18 @@
+-database
+    +root
+        gmail
+        userName
+        passWorld
+        
+    +admin
+    +user
+-root
+    methon:create/delete admin
+-admin 
+    methon:create/delete/add field to user 
+-user   
+    methon:overing by admin create
+
+Methon:
+    CRUD root
+    
