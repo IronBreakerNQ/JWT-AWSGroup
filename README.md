@@ -53,8 +53,8 @@
   2 token trùng nhau thì sẽ banned hết tất cả token của user đó
   ```
 ### AccessToken và RefreshToken (Future features)
-## Code 
-### model
+## Code:
+### Model
 ```plaintext
   rootSchema:
       Field:gmail,name,passWorld,publicKey,Admin[],timestamps.
@@ -71,3 +71,31 @@
   BannedListSchema:
       Field:token,timestamps.
   ```
+  ### Controllers
+```plaintext
+  rootController:
+      Menthod:Create,Login,test(CURD)... .
+      Login:
+  AdminController:
+       Menthod:Create,Login,test(CURD)... .
+  ChildController:
+       Menthod:Create,Login,test(CURD)... .
+  GroupController:
+      Menthod:Create,Login,test(CURD)... .
+  TaskController:
+      Menthod:Create,Login,test(CURD)... .
+  ```
+  ### Middleware
+  ```plaintext
+  rootController:
+      Menthod:Create,Login,test(CURD)... .
+  AdminController:
+       Menthod:Create,Login,test(CURD)... .
+  ChildController:
+       Menthod:Create,Login,test(CURD)... .
+  GroupController:
+      Menthod:Create,Login,test(CURD)... .
+  TaskController:
+      Menthod:Create,Login,test(CURD)... .
+  ```
+  
