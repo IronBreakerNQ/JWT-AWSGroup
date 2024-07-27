@@ -1,5 +1,5 @@
 # JWT-AWSGroup
-Ý tưởng: Tạo ra 1 hệ thống phân quyên người dùng và xác thực với thuật toán bất đối xứng JWT
+Ý tưởng: Tạo ra 1 hệ thống phân quyền người dùng và xác thực với thuật toán bất đối xứng JWT
 ## Hệ thống phần quyền người dùng
 ### Mind map 
 ![Screenshot (1857)](https://github.com/user-attachments/assets/9ea97da6-17a2-485b-951c-d703633e075f)
@@ -8,11 +8,12 @@
     Field:task,user
     Menthod: 
       -User:create a store task , create a store include user.
-    Tạo ra 1 nhóm để chứ dữ liệu.
+    Tạo ra 1 nhóm để lư trữ dữ liệu.
   User:
     Field: task.
     Menthod: CUR task.
-    Là cấp thấp nhất trong mô hình phân quyền người dùng nên chỉ thục hiện các chức năng CUR , không có delete !
+    Là cấp thấp nhất trong mô hình phân quyền người dùng nên chỉ thục hiện các chức năng CUR
+    , không có delete !
   Admin:
     Field: user,admin,group.
     Menthod:
@@ -52,4 +53,13 @@
   2 token trùng nhau thì sẽ banned hết tất cả token của user đó
   ```
 ### AccessToken và RefreshToken (Future features)
-
+## Code 
+### model
+  rootSchema:
+      Field:gmail,name,passWorld,publicKey,Admin[],timestamps.
+  AdminSchema:
+      Field:gmail,name,passWorld,user[],Group[],publicKey,timestamps.
+  childSchema:
+      Field:gamil,name,passWorld,role a->b,timestamps.
+  Task a->d:
+      Field:methoda,user[],timestamps.
