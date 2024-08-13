@@ -27,7 +27,7 @@
      -Admin:create admin. 
     Có chức năng tạo ra các tài khoản admin mới , lấy lại các tài khoản admin khi bị mất.
     *Sau khi tạo xong các admin cần thiết nên xóa hết cache liên quan và không đụng tới **root** nữa !
-```
+c
 ## Thuật toán bất đối xứng JWT
 ### Mind map:
   ![Screenshot (1858)](https://github.com/user-attachments/assets/3efa8a7f-c895-47e8-84d0-64dcc696b640)
